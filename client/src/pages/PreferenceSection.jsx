@@ -1,7 +1,24 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 function PreferenceSection() {
   const [selectedTopics, setSelectedTopics] = useState([]);
+  const [selected, setSelected] = useState(false);
+
+  const selectPreferences = async () => {
+    if (typeof window.ethereum !== "undefined") {
+      try {
+        await window.ethereum.enable();
+        const accounts = await window.ethereum.request({
+          method: "eth_accounts",
+        });
+      } catch (error) {
+        alert(error);
+      }
+    } else {
+      alert("Please install MetaMask to connect");
+    }
+  };
 
   const handleTopicSelection = (topic) => {
     if (selectedTopics.includes(topic)) {
@@ -118,7 +135,7 @@ function PreferenceSection() {
   ];
 
   return (
-    <>
+    <div className="bg-gray-100 rounded-lg px-8 py-6">
       <div className="flex flex-col">
         <h2 className="mb-20">Select topics of interest:</h2>
         <div className="flex flex-wrap">
@@ -146,30 +163,29 @@ function PreferenceSection() {
           ))}
         </div>
         <>
-          <div
-            className="flex items-center justify-center"
-            onClick={() => console.log(selectedTopics)}
-          >
-            <div className="m-3">
-              <button className="bg-white text-gray-800 font-bold rounded border-b-2 border-blue-500 hover:border-blue-600 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
-                <span className="mr-2">Create Account!</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentcolor"
-                    d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-                  ></path>
-                </svg>
-              </button>
-            </div>
+          <div className="flex items-center justify-center">
+            <Link href="/loggedIn">
+              <div className="m-3">
+                <button className="bg-white text-gray-800 font-bold rounded border-b-2 border-blue-500 hover:border-blue-600 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
+                  <span className="mr-2">Create Account!</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentcolor"
+                      d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </Link>
           </div>
         </>
       </div>
-    </>
+    </div>
   );
 }
 
