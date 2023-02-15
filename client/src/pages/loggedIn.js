@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function loggedIn() {
   const [isMetamaskConnected, setIsMetamaskConnected] = useState();
+  const [searchValue, setSearchValue] = useState("");
   const connectMetamask = async () => {
     if (typeof window.ethereum !== "undefined") {
       try {
@@ -16,6 +17,9 @@ export default function loggedIn() {
     } else {
       alert("Please install MetaMask to connect");
     }
+  };
+  const handleSearchInput = (event) => {
+    setSearchValue(event);
   };
 
   useEffect(() => {
@@ -479,8 +483,31 @@ export default function loggedIn() {
             <title>🥷Safe browsing</title>
           </Head>
           <div>
-            <h1>Welcome to the new page!</h1>
-            <p>This is a new page in your Next.js website.</p>
+            <div className="min-w-screen min-h-screen bg-gray-800 flex px-5 py-5">
+              <div
+                className="w-full mx-auto rounded-xl bg-gray-100 shadow-lg p-10 text-gray-800 relative overflow-hidden resize-x min-w-80 max-w-3xl"
+                x-data="app()"
+                x-init="generatePassword()"
+              >
+                <div className="relative mt-1">
+                  <input
+                    type="text"
+                    id="password"
+                    className="w-full pl-3 pr-10 py-2 border-2 border-gray-200 rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500 transition-colors"
+                    placeholder="Search..."
+                    onChange={handleSearchInput}
+                  />
+                </div>
+                <div className="absolute top-0 left-0 w-full h-2 flex">
+                  <div className="h-2 bg-blue-500 flex-1"></div>
+                  <div className="h-2 bg-red-500 flex-1"></div>
+                  <div className="h-2 bg-yellow-500 flex-1"></div>
+                  <div className="h-2 bg-blue-500 flex-1"></div>
+                  <div className="h-2 bg-green-500 flex-1"></div>
+                  <div className="h-2 bg-red-500 flex-1"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </>
       )}
