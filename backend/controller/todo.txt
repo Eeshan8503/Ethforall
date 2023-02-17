@@ -1,0 +1,3 @@
+URI switch made
+api endpoint to init user
+api end point to update user
