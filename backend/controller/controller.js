@@ -6,7 +6,7 @@ const Name = require('w3name');
 const fs=require('fs')
 const Web3 = require('web3');
 const contract = require('./../build/contracts/Main.json');
-
+const axios =require('axios')
 // Connect to the local Ethereum network
 const web3 = new Web3('http://localhost:7545');
 
@@ -58,13 +58,21 @@ exports.initAccount=catchAsync(async(req,res,next)=>{
     const value = access_token;
     const revision = await Name.v0(name, value);
     await Name.publish(revision, name.key);
-    myContract.methods.setUser(req.body.account, name.key.bytes, name.toString())
-    .send({from: req.body.account})
+    let buf=Buffer.from(name.key.bytes)
+    console.log(buf)
+    myContract.methods.setUser(req.body.account, buf, name.toString())
+    .send({from: req.body.account,gas: 6721975, gasPrice: '30000000'})
     .then((receipt) => {
-        // console.log('Transaction receipt:', receipt);
+        console.log('Transaction receipt:', receipt);
     })
     .catch((error) => {
         console.error('Error:', error);
+        res.status(200).json({
+          status: 'success',
+          data: {
+            data: error
+          }
+        });
     });
     res.status(200).json({
         status: 'success',
@@ -75,24 +83,34 @@ exports.initAccount=catchAsync(async(req,res,next)=>{
 })
 
 exports.uploadFile = catchAsync(async (req,res,next) => {
-  const name=""
-  const keyss=""
-  myContract.methods.getUser(req.body.account)
-    .call()
-    .then((result) => {
-        console.log('User:', result);
-        keyss=result[0]
-        name=result[1]
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-    });
+  var name=""
+  let keyss
+  // myContract.methods.getUser(req.body.account)
+  //   .call()
+  //   .then((result) => {
+  //       console.log('User:', result);
+  //       keyss=result[0]
+  //       name=result[1]
+  //   })
+  //   .catch((error) => {
+  //       console.error('Error:', error);
+  //   });
+  const result=await myContract.methods.getUser(req.body.account).call()
+  // keyss=await Name.from(result[0]);
+  keyss=result[0].slice(2)
+  name=result[1]
+  const buf=Buffer.from(keyss, 'hex')
+  console.log(buf)
+  console.log("----------");
+  const retrived_key=await Name.from(buf)
+  console.log(retrived_key);
+  console.log("Checking "+keyss);
   // Create a JSON object to store in IPFS  
     function makeFileObjects () {
-      const buffer = Buffer.from(req.body.data)
+      const buffer = Buffer.from(JSON.stringify(req.body.data))
     
       const files = [
-        new File([buffer],req.body.account+".json" )
+        new File([buffer],"hello.json" )
       ]
       return files
     }
@@ -114,7 +132,7 @@ exports.uploadFile = catchAsync(async (req,res,next) => {
     try{
       console.log("loaded keys, now publishing..")
       const nextRevision = await Name.increment(revision, access_token);
-      await Name.publish(nextRevision,keyss);
+      await Name.publish(nextRevision,retrived_key.key);
     }
     catch(err){
       console.log(err)
@@ -129,31 +147,61 @@ exports.uploadFile = catchAsync(async (req,res,next) => {
     
 })
 exports.getFile=catchAsync(async(req,res,next)=>{
-  const name_para="";
+  let name_para="";
+  console.log(req.body.account)
   myContract.methods.getUser(req.body.account)
     .call()
     .then((result) => {
         name_para=result[1]
+        console.log("name_para is "+name_para)
+        console.log("checking..."+name_para)
+        const name = Name.parse(name_para);
+        Name.resolve(name).then((revision) => {
+          console.log('Resolved value:', revision.value);
+          axios.get('https://'+revision.value+'.ipfs.w3s.link/hello.json') 
+          .then(response => {
+            res.status(200).json({
+              status: 'success',
+              data: response.data
+          })
+        }).catch((error) => {
+          console.error('Error in axios:', error);
+        });
+        
     })
     .catch((error) => {
-        console.error('Error:', error);
+        console.error('Error in w3s:', error);
     });
-  const name = Name.parse(name_para);
-  const revision = await Name.resolve(name);
-  console.log('Resolved value:', revision.value);
-  res.status(200).json({
-    status: 'success',
-    data: {
-      data: retrieve(revision.value)
-    }
-  });
-  
+})
+.catch((error) => {
+    console.error('Error:', error);
+});
 })
 
-async function retrieve (cid) {
-  axios.get('https://'+cid+'.ipfs.w3s.link/hello.json') .then(res => {return res.data})
-  .catch(err => console.log(err))
-  // request succeeded! do something with the response object here...
-//    console.log(res)
-}
+function hex2bin(hex){
+  hex = hex.replace("0x", "").toLowerCase();
+  var out = "";
+  for(var c of hex) {
+      switch(c) {
+          case '0': out += "0000"; break;
+          case '1': out += "0001"; break;
+          case '2': out += "0010"; break;
+          case '3': out += "0011"; break;
+          case '4': out += "0100"; break;
+          case '5': out += "0101"; break;
+          case '6': out += "0110"; break;
+          case '7': out += "0111"; break;
+          case '8': out += "1000"; break;
+          case '9': out += "1001"; break;
+          case 'a': out += "1010"; break;
+          case 'b': out += "1011"; break;
+          case 'c': out += "1100"; break;
+          case 'd': out += "1101"; break;
+          case 'e': out += "1110"; break;
+          case 'f': out += "1111"; break;
+          default: return "";
+      }
+  }
 
+  return out;
+}

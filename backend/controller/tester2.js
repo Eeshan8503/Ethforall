@@ -29,11 +29,33 @@ async function retrieve (cid) {
     // request succeeded! do something with the response object here...
 //    console.log(res)
   }
-let jss='{"data":{"food":1,"car":4}}'
-console.log(testjson.data)
+
+// console.log(testjson.data)
 function test(){
-  const obj = {hello:"name",name:"Enigma"}
-  const buffer = Buffer.from(JSON.stringify(testjson.data))
-  console.log(obj)
+  async function saveSigningKey(name) {
+    const bytes = name.key.bytes;
+    console.log(bytes)
+  }
+async function loadSigningKey(filename) {
+  const bytes = await fs.promises.readFile(filename);
+  const name = await Name.from(bytes);
+  return name;
 }
-test()
+}
+async function saveSigningKey() {
+  // const name = await Name.create();
+  //   console.log('created new name: ', name.toString());
+  //   const value = "access_token";
+  //   const revision = await Name.v0(name, value);
+    // const bytes = name.key.bytes;
+    // const data={
+    //   data:bytes
+    // }
+
+    // console.log(JSON.stringify(bytes))
+    const bytes = await fs.promises.readFile("abcd.bat");
+    console.log(bytes)
+}
+
+
+saveSigningKey()

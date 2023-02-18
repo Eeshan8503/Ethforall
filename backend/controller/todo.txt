@@ -1,3 +1,6 @@
 URI switch made
 api endpoint to init user
 api end point to update user
+
+<Buffer 08 01 12 40 70 06 08 39 f2 d3 0f 08 63 e0 10 ba 4b 71 7d e4 0a 09 76 8d f4 4f 6c 25 36 84 ca 03 b6 e2 f8 13 49 82 cb d8 c7 6d 27 db a3 31 29 7e 6e e6 ... 18 more bytes>
+0x 08 01 12 40 70 06 08 39 f2 d3 0f 08 63 e0 10 ba 4b 71 7d e4 0a 09 76 8d f4 4f 6c 25 36 84 ca 03 b6 e2 f8 13 49 82 cb d8 c7 6d 27 db a3 31 29 7e 6e e6 d0 e7 e3 10 c7 c0 77 c5 6d 30 39 f4 7c 87 0e f6 e3 1a
