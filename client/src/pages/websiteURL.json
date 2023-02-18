@@ -1,0 +1,898 @@
+{
+    "Programming": [
+        {
+            "name": "Coding Dojo",
+            "logo_url": "https://codingdojo.com/wp-content/uploads/2019/11/cd-logo-footer.png",
+            "advertising_url": "https://www.codingdojo.com/wp-content/themes/codingdojo/assets/images/coding-dojo-course-hero-banner.png"
+        }
+    ],
+    "Data Science": [
+        {
+            "name": "DataCamp",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/DataCamp_logo.svg/1200px-DataCamp_logo.svg.png",
+            "advertising_url": "https://raw.githubusercontent.com/datacamp/datacamp_facebook_static_assets/master/DataCamp_FB_1200x628.png"
+        }
+    ],
+    "Technology": [
+        {
+            "name": "IBM",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/800px-IBM_logo.svg.png",
+            "advertising_url": "https://www.ibm.com/cloud-computing/bluemix/assets/images/bluemix-home-hero.jpg"
+        }
+    ],
+    "Self Improvement": [
+        {
+            "name": "BetterUp",
+            "logo_url": "https://pbs.twimg.com/profile_images/1201533090872009728/RKV7Nc3N_400x400.jpg",
+            "advertising_url": "https://s3.amazonaws.com/betterup-assets/images/BetterUp-Lite-1200x628.png"
+        }
+    ],
+    "Writing": [
+        {
+            "name": "Grammarly",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Grammarly_logo.svg/1024px-Grammarly_logo.svg.png",
+            "advertising_url": "https://static.grammarly.com/assets/marketing/images/grammarly-1200x628.jpg"
+        }
+    ],
+    "Relationships": [
+        {
+            "name": "eHarmony",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/EHarmony_logo.svg/800px-EHarmony_logo.svg.png",
+            "advertising_url": "https://www.eharmony.com/blog/wp-content/uploads/2016/05/eharmony_blog_1200x628_fb-share.jpg"
+        }
+    ],
+    "Machine Learning": [
+        {
+            "name": "Coursera",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Coursera_logo.svg/1200px-Coursera_logo.svg.png",
+            "advertising_url": "https://cdn.coursera.org/marketing/home/social_banner_1200x628_v1.jpg"
+        }
+    ],
+    "Productivity": [
+        {
+            "name": "Todoist",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Todoist_logo.svg/1024px-Todoist_logo.svg.png",
+            "advertising_url": "https://todoist.com/images/press/social/todoist-social-1200x628.jpg"
+        }
+    ],
+    "Politics": [
+        {
+            "name": "Politico",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Political_Logo.svg/1024px-Political_Logo.svg.png",
+            "advertising_url": "https://www.politico.com/news/assets/images/social/2020/03/06/politico-social-media-1200x628.jpg"
+        }
+    ],
+    "Cryptocurrency": [
+        {
+            "name": "Coinbase",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Coinbase_logo.svg/1024px-Coinbase_logo.svg.png",
+            "advertising_url": "https://www.coinbase.com/assets/social/social_1200x628-f6e1f2e2b6ed44f935bbb51d9ea7c1f6.png"
+        }
+    ],
+    "Psychology": [
+        {
+            "name": "Talkspace",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Talkspace_logo.svg/1200px-Talkspace_logo.svg.png",
+            "advertising_url": "https://talkspace.com/wp-content/uploads/2019/08/social-banner_1200x628.jpg"
+        }
+    ],
+    "Money": [
+        {
+            "name": "Robinhood",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Robinhood_logo.svg/1024px-Robinhood_logo.svg.png",
+            "advertising_url": "https://www.robinhood.com/assets/social/social_1200x628-c9f9f77f8b1cfc5a5f52d5b5b17e5cc5.png"
+        }
+    ],
+    "Business": [
+        {
+            "name": "LinkedIn",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.svg/1200px-LinkedIn_logo_initials.svg.png",
+            "advertising_url": "https://content.linkedin.com/content/dam/business/en-us/campaigns/brand-awareness/brand-awareness-1200x628.jpg.rendition.1200.628.jpg"
+        }
+    ],
+    "Python": [
+        {
+            "name": "Codecademy",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Codecademy_logo.svg/600px-Codecademy_logo.svg.png",
+            "advertising_url": "https://cdn.codecademy.com/assets/marketing/flex/codecademy-flex-1200x628.jpg"
+        }
+    ],
+    "Health": [
+        {
+            "name": "Headspace",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Headspace_logo.svg/1200px-Headspace_logo.svg.png",
+            "advertising_url": "https://www.headspace.com/assets/social/social_1200x628-e8cd1fc3e71daeaacd0445b9f8f045fe.png"
+        }
+    ],
+    "Science": [
+        {
+            "name": "TED",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/TED_logo.svg/1200px-TED_logo.svg.png",
+            "advertising_url": "https://www.ted.com/tedx/assets/social_1200x628-c988d9b9e6a8e7f60f2c2d6baa44e8a8.jpg"
+        }
+    ],
+    "Mental Health": [
+        {
+            "name": "Calm",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Calm_Logo.svg/1024px-Calm_Logo.svg.png",
+            "advertising_url": "https://www.calm.com/static/images/social/social-1200x628.jpg"
+        }
+    ],
+    "Life": [
+        {
+            "name": "Lifehack",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/2/2c/Lifehack_Logo.png",
+            "advertising_url": "https://lifehack.org/wp-content/uploads/2020/09/Lifehack-social-media-banner-1200x628.jpg"
+        }
+    ],
+    "Software Development": [
+        {
+            "name": "GitHub",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png",
+            "advertising_url": "https://help.github.com/assets/images/help/social-media/social-1200x628.jpg"
+        }
+    ],
+    "Startup": [
+        {
+            "name": "Stripe",
+            "logo_url": "https://stripe.com/img/v3/home/social.jpg",
+            "advertising_url": "https://stripe.com/img/social/home/social-og.jpg"
+        }
+    ],
+    "Design": [
+        {
+            "name": "Adobe",
+            "logo_url": "https://www.adobe.com/content/dam/cc/icons/cc_logo_blue.svg",
+            "advertising_url": "https://www.adobe.com/content/dam/cc/icons/cc_logo_blue.svg"
+        }
+    ],
+    "JavaScript": [
+        {
+            "name": "Facebook",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+            "advertising_url": "https://www.facebook.com/ads/discovery/trending_searches/static/creative/static_image_TB_10_en.png"
+        }
+    ],
+    "Artificial Intelligence": [
+        {
+            "name": "Google",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+            "advertising_url": "https://www.google.com/intl/en_us/ads/images/brand-identity/google-adwords-logo-2x.png"
+        }
+    ],
+    "Culture": [
+        {
+            "name": "Netflix",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+            "advertising_url": "https://assets.nflxext.com/ffe/siteui/vlv3/3f8c7d11-d0d7-4db3-8a7f-be9a1e9d1118/d8cd50a4-d4d4-4113-bab8-38cf09f9e1d7/US-en-20200327-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+        }
+    ],
+    "Software Engineering": [
+        {
+            "name": "Github",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+            "advertising_url": "https://github.githubassets.com/images/modules/site/logos/github-logomark.png"
+        }
+    ],
+    "Blockchain": [
+        {
+            "name": "Blockchain.com",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Blockchain.com_logo.svg",
+            "advertising_url": "https://www.blockchain.com/static/img/blockchain-logo-blockchain-wordmark.png"
+        }
+    ],
+    "Coding": [
+        {
+            "name": "Codecademy",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Codecademy_logo.svg",
+            "advertising_url": "https://www.codecademy.com/images/logo-wordmark-2.svg"
+        }
+    ],
+    "Entrepreneurship": [
+        {
+            "name": "Shopify",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Shopify_logo_2019.svg",
+            "advertising_url": "https://www.shopify.com/hubfs/banners/shopify_logo_desktop.jpg"
+        }
+    ],
+    "React": [
+        {
+            "name": "ReactJS",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+            "advertising_url": "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/033/square_256/react.png"
+        }
+    ],
+    "UX": [
+        {
+            "name": "InVision",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/InVision_logo.svg",
+            "advertising_url": "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/098/square_256/invision.png"
+        }
+    ],
+    "Education": [
+        {
+            "name": "Coursera",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Coursera_logo.svg",
+            "advertising_url": "https://www.coursera.org/static/images/coursera-logo.png"
+        }
+    ],
+    "History": [
+        {
+            "name": "Smithsonian",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Smithsonian_logo.svg",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Smithsonian_Institution_Logo.jpg"
+        }
+    ],
+    "Humor": [
+        {
+            "name": "BuzzFeed",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/BuzzFeed_logo.svg",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/BuzzFeed_Logo.png"
+        }
+    ],
+    "Web Development": [
+        {
+            "name": "WordPress",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/WordPress.svg",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/WordPress.svg"
+        }
+    ],
+    "Work": [
+        {
+            "name": "Slack",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Slack_Icon.svg",
+            "advertising_url": "https://logos-download.com/wp-content/uploads/2016/09/Slack_logo_icon.png"
+        }
+    ],
+    "Lifestyle": [
+        {
+            "name": "Houzz",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Houzz_logo.svg",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Houzz_Logo.png"
+        }
+    ],
+    "Society": [
+        {
+            "name": "TED",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/TED_logo.svg",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/TED_Logo_2014.svg/1200px-TED_Logo_2014.svg.png"
+        }
+    ],
+    "Deep Learning": [
+        {
+            "name": "Google Colab",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Google_Colaboratory_logo.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Google_Colaboratory_logo.png"
+        }
+    ],
+    "Marketing": [
+        {
+            "name": "Mailchimp",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Mailchimp_logo.svg",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Mailchimp_Logo_2019.png"
+        }
+    ],
+    "Books": [
+        {
+            "name": "Goodreads",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Goodreads_logo.svg",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Goodreads_Logo.png"
+        }
+    ],
+    "Nft": [
+        {
+            "name": "OpenSea",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/OpenSea_logo.svg",
+            "advertising_url": "https://opensea.io/images/opensea_logo.svg"
+        }
+    ],
+    "Social Media": [
+        {
+            "name": "Twitter",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Twitter_bird_logo_2012.svg",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Twitter_Ads_Logo.svg"
+        }
+    ],
+    "Leadership": [
+        {
+            "name": "Leadership Resources International",
+            "logo_url": "https://www.leadership-resources.com/wp-content/uploads/2016/11/LRI_Logo_RGB_1.jpg",
+            "advertising_url": "https://www.leadership-resources.com/wp-content/uploads/2017/08/LRI_Leadership_Development_Ad_1.jpg"
+        },
+        {
+            "name": "Center for Creative Leadership",
+            "logo_url": "https://www.ccl.org/wp-content/uploads/2017/05/ccl_logo.svg",
+            "advertising_url": "https://www.ccl.org/wp-content/uploads/2018/12/CCL_GoogleAds_Leadership_v2_2560x1440.jpg"
+        }
+    ],
+    "Android": [
+        {
+            "name": "Android",
+            "logo_url": "https://www.android.com/static/2016/img/logo-android-green_1x.png",
+            "advertising_url": "https://www.android.com/static/2016/img/hero-android-n.jpg"
+        },
+        {
+            "name": "Google Play",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Google_Play_logo.svg/1200px-Google_Play_logo.svg.png",
+            "advertising_url": "https://www.android.com/static/2016/img/hero-android-n.jpg"
+        }
+    ],
+    "Apple": [
+        {
+            "name": "Apple",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png",
+            "advertising_url": "https://www.apple.com/v/iphone/home/b/images/shared/og__j5zl9d9_large_2x.jpg"
+        },
+        {
+            "name": "Macbook",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Macbook_Air_11_Logo.svg/1200px-Macbook_Air_11_Logo.svg.png",
+            "advertising_url": "https://www.apple.com/v/mac/home/ab/images/shared/og__zjd3n7v_large_2x.jpg"
+        }
+    ],
+    "Women": [
+        {
+            "name": "Women International Network",
+            "logo_url": "https://www.winnetwork.org/wp-content/uploads/2019/05/cropped-WIN_LOGO_RGB_HORIZONTAL-2.png",
+            "advertising_url": "https://www.winnetwork.org/wp-content/uploads/2018/09/WIN_Ad-1.jpg"
+        },
+        {
+            "name": "Women Who Code",
+            "logo_url": "https://d2xzmw6cctk25h.cloudfront.net/assets/logo-black-ef8a8bc9bc9c2ccd27b7f1a8dbf0d316.svg",
+            "advertising_url": "https://www.womenwhocode.com/img/promo/wwc-logo-black.jpg"
+        }
+    ],
+    "Mindfulness": [
+        {
+            "name": "Calm",
+            "logo_url": "https://www.calm.com/static/images/logo.png",
+            "advertising_url": "https://www.calm.com/static/images/social/calm_social_og_image.png"
+        },
+        {
+            "name": "Headspace",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Headspace_logo.svg/1200px-Headspace_logo.svg.png",
+            "advertising_url": "https://www.headspace.com/hs-fs/hubfs/Headspace%20Elements/Social/Headspace_Elements_Social_OG_Image_1200x628.jpg?width=1200&name=Headspace_Elements_Social_OG_Image_1200x628.jpg"
+        }
+    ],
+    "Sexuality": [
+        {
+            "name": "Planned Parenthood",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Planned_Parenthood_Logo.svg/1200px-Planned_Parenthood_Logo.svg.png",
+            "advertising_url": "https://www.plannedparenthood.org/sites/default/files/styles/1920x1080/public/media/covid_og_image_2.jpg?itok=nj1_sVtF"
+        },
+        {
+            "name": "Sex Education Forum",
+            "logo_url": "https://www.sexeducationforum.org.uk/wp-content/uploads/2018/06/SEF-logo-new-colour-1.jpg",
+            "advertising_url": "https://www.sexeducationforum.org.uk/wp-content/uploads/2019/10/SEF-SRE-Campaign-Ad-1.jpg"
+        }
+    ],
+    "Fitness": [
+        {
+            "name": "Daily Burn",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Daily_Burn_logo.svg/1200px-Daily_Burn_logo.svg.png",
+            "advertising_url": "https://dailyburn.com/life/wp-content/uploads/sites/2/2020/03/FB-Ad-1.jpg"
+        },
+        {
+            "name": "Peloton",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Peloton_Logo.svg/1200px-Peloton_Logo.svg.png",
+            "advertising_url": "https://static.pelotoncycle.com/static-images/landing-pages/hero-image-2020.jpg"
+        }
+    ],
+    "AWS": [
+        {
+            "name": "Amazon Web Services",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png",
+            "advertising_url": "https://d1.awsstatic.com/product-marketing/Event-Driven-Architecture/AWS_EDA_1200x628.1f9d2ecd7fef8bcfa0db67d0042cefba73818c57.jpg"
+        },
+        {
+            "name": "Cloud Academy",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Cloud_Academy_New_Logo.svg/1200px-Cloud_Academy_New_Logo.svg.png",
+            "advertising_url": "https://blog.cloudacademy.com/wp-content/uploads/2020/01/Cloud-Academy-Ad-1.jpg"
+        }
+    ],
+    "Flutter": [
+        {
+            "name": "Flutter",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Flutter_logo.svg/1200px-Flutter_logo.svg.png",
+            "advertising_url": "https://miro.medium.com/max/1730/1*tF1Vmq3KjVZ1iBpdr-V7PQ.png"
+        },
+        {
+            "name": "Dart",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Dart_logo.svg/1200px-Dart_logo.svg.png",
+            "advertising_url": "https://dart.dev/assets/shared/dart-logo.jpg"
+        }
+    ],
+    "UX Design": [
+        {
+            "name": "InVision",
+            "logo_url": "https://pbs.twimg.com/profile_images/935258575244126208/ZhU_V6jK_400x400.jpg",
+            "advertising_url": "https://www.invisionapp.com/design-system-manager"
+        }
+    ],
+    "Spirituality": [
+        {
+            "name": "Yoga International",
+            "logo_url": "https://yogainternational.com/wp-content/themes/yogainternational/img/logo-desktop.jpg",
+            "advertising_url": "https://yogainternational.com/store/discover"
+        }
+    ],
+    "Creativity": [
+        {
+            "name": "CreativeLive",
+            "logo_url": "https://www.creativelive.com/wp-content/uploads/2017/06/CreativeLive-Logo-Horizontal-White.png",
+            "advertising_url": "https://www.creativelive.com/class-catalog"
+        }
+    ],
+    "Nodejs": [
+        {
+            "name": "Node.js",
+            "logo_url": "https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png",
+            "advertising_url": "https://nodejs.org/en/"
+        }
+    ],
+    "UI": [
+        {
+            "name": "Adobe XD",
+            "logo_url": "https://www.adobe.com/content/dam/cc/global/en/brand/xd/xd-logo.png",
+            "advertising_url": "https://www.adobe.com/products/xd.html"
+        }
+    ],
+    "Defi": [
+        {
+            "name": "Compound",
+            "logo_url": "https://compound.finance/images/logo.svg",
+            "advertising_url": "https://compound.finance/earn"
+        }
+    ],
+    "This Happened To Me": [
+        {
+            "name": "Whisper",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Whisper_Logo.svg/1200px-Whisper_Logo.svg.png",
+            "advertising_url": "https://www.whisper.sh/"
+        }
+    ],
+    "Philosophy": [
+        {
+            "name": "The School of Life",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/The_School_of_Life_logo.svg/1200px-The_School_of_Life_logo.svg.png",
+            "advertising_url": "https://www.theschooloflife.com/articles/"
+        }
+    ],
+    "NLP": [
+        {
+            "name": "NLP.ai",
+            "logo_url": "https://nlp.ai/wp-content/uploads/2020/05/logo_new_white-copy-1.png",
+            "advertising_url": "https://nlp.ai/products/enterprise-solutions/"
+        }
+    ],
+    "Economics": [
+        {
+            "name": "The Economist",
+            "logo_url": "https://www.economist.com/static/img/og-default.jpg",
+            "advertising_url": "https://www.economist.com/advertising"
+        }
+    ],
+    "World": [
+        {
+            "name": "BBC",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/BBC.svg/1200px-BBC.svg.png",
+            "advertising_url": "https://www.bbc.com/advertising"
+        }
+    ],
+    "Dev Ops": [
+        {
+            "name": "Chef",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Chef_Software_logo.svg/1200px-Chef_Software_logo.svg.png",
+            "advertising_url": "https://www.chef.io/solutions/devops-automation/"
+        }
+    ],
+    "Ethereum": [
+        {
+            "name": "Etherscan",
+            "logo_url": "https://etherscan.io/images/logo-2.png",
+            "advertising_url": "https://etherscan.io/advertise"
+        }
+    ],
+    "Product Management": [
+        {
+            "name": "ProductPlan",
+            "logo_url": "https://d3q6qq2zt8nhwv.cloudfront.net/assets/logos/productplan-logo-black-d9d4f3.svg",
+            "advertising_url": "https://www.productplan.com/roadmapping-software/"
+        }
+    ],
+    "Data Visualization": [
+        {
+            "name": "Tableau",
+            "logo_url": "https://www.tableau.com/content/dam/website/en_us/images/logo-tableau.png",
+            "advertising_url": "https://www.tableau.com/solutions/visual-analytics"
+        }
+    ],
+    "Feminism": [
+        {
+            "name": "Women for Women International",
+            "logo_url": "https://www.womenforwomen.org/wp-content/uploads/2016/12/WfWI-Logo-Color-Logo-Large.png",
+            "advertising_url": "https://www.womenforwomen.org/get-involved/"
+        }
+    ],
+    "Equality": [
+        {
+            "name": "Equality Now",
+            "logo_url": "https://equalitynow.org/wp-content/uploads/2018/11/Equality-Now-Logo-White-300x139.png",
+            "advertising_url": "https://equalitynow.org/take-action/"
+        }
+    ],
+    "Freelancing": [
+        {
+            "name": "Upwork",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Upwork_logo.svg/1200px-Upwork_logo.svg.png",
+            "advertising_url": "https://www.upwork.com/hiring/"
+        }
+    ],
+    "Climate Change": [
+        {
+            "name": "350.org",
+            "logo_url": "https://350.org/wp-content/uploads/2020/02/350-logo-white.png",
+            "advertising_url": "https://350.org/take-action/"
+        }
+    ],
+    "Bitcoin": [
+        {
+            "name": "Coinbase",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Coinbase_Logo.svg/1200px-Coinbase_Logo.svg.png",
+            "advertising_url": "https://www.coinbase.com/earn"
+        }
+    ],
+    "OS": [
+        {
+            "name": "Linux",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png",
+            "advertising_url": "https://www.linux.org/"
+        }
+    ],
+    "Future": [
+        {
+            "name": "SingularityNET",
+            "logo_url": "https://www.singularitynet.io/wp-content/uploads/2020/04/SingularityNET-Logo-White-with-Text-768x227.png",
+            "advertising_url": "https://www.singularitynet.io/ai-solutions/"
+        }
+    ],
+    "Cybersecurity": [
+        {
+            "name": "McAfee",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/McAfee_Logo.svg/1200px-McAfee_Logo.svg.png",
+            "advertising_url": "https://www.mcafee.com/enterprise/en-us/cyber-security-solutions.html"
+        }
+    ],
+    "Nonfiction": [
+        {
+            "name": "TED Talks",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/TED_logo.svg/1200px-TED_logo.svg.png",
+            "advertising_url": "https://www.ted.com/participate/tedx/organize-a-tedx-event"
+        }
+    ],
+    "True Crime": [
+        {
+            "name": "CrimeCon",
+            "logo_url": "https://crimecon.com/wp-content/uploads/2020/02/CrimeCon-Logo-White-RGB.png",
+            "advertising_url": "https://crimecon.com/sponsor"
+        }
+    ],
+    "Web 3": [
+        {
+            "name": "web3.js",
+            "logo_url": "https://web3js.readthedocs.io/en/v1.2.9/img/web3js_logo_2.png",
+            "advertising_url": "https://web3js.readthedocs.io/en/v1.2.9/"
+        }
+    ],
+    "Java": [
+        {
+            "name": "Oracle",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Oracle_logo.svg/1200px-Oracle_logo.svg.png",
+            "advertising_url": "https://d1i18z5w5dy8j5.cloudfront.net/wp-content/uploads/2019/09/Oracle_Cloud_Infrastructure_Logo_1-1.jpg"
+        },
+        {
+            "name": "IBM",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/IBM_logo.svg",
+            "advertising_url": "https://www.wired.com/wp-content/uploads/2019/11/1_IBM.jpg"
+        }
+    ],
+    "Religion": [
+        {
+            "name": "Church of England",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Church_of_England_Logo.svg/1200px-Church_of_England_Logo.svg.png",
+            "advertising_url": "https://www.theguardian.com/commentisfree/2019/jul/21/church-of-england-celebrate-diversity-inclusion-report"
+        },
+        {
+            "name": "Christianity Today",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Christianity_Today_logo.svg/1920px-Christianity_Today_logo.svg.png",
+            "advertising_url": "https://www.christianitytoday.com/ct/2018/april-web-only/christianity-today-anniversary-banner.jpg"
+        }
+    ],
+    "Art": [
+        {
+            "name": "Art Institute of Chicago",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Art_Institute_of_Chicago_Logo.svg/1200px-Art_Institute_of_Chicago_Logo.svg.png",
+            "advertising_url": "https://www.artic.edu/sites/default/files/styles/social_media/public/hero/tac-hero-1920x1080-v2.jpg?itok=EzgMJfCv"
+        },
+        {
+            "name": "Museum of Modern Art",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/The_Museum_of_Modern_Art_Logo.svg/1200px-The_Museum_of_Modern_Art_Logo.svg.png",
+            "advertising_url": "https://www.moma.org/assets/img/home/home-banner-1.jpg"
+        }
+    ],
+    "Family": [
+        {
+            "name": "Family Watchdog",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Family_Watchdog_logo.svg/1200px-Family_Watchdog_logo.svg.png",
+            "advertising_url": "https://www.familywatchdog.us/images/banner.jpg"
+        },
+        {
+            "name": "Family Dollar",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Family_Dollar_Logo.svg/1200px-Family_Dollar_Logo.svg.png",
+            "advertising_url": "https://www.familydollar.com/images/global/banners/main-banner.jpg"
+        }
+    ],
+    "Fiction": [
+        {
+            "name": "Harper Collins Publishers",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Harper_Collins_Publishing_Logo.svg/1200px-Harper_Collins_Publishing_Logo.svg.png",
+            "advertising_url": "https://www.hachettebookgroup.com/wp-content/uploads/hbg_group_home_banner_1400x700.jpg"
+        },
+        {
+            "name": "Penguin Random House",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Penguin_Random_House_Logo.svg/1200px-Penguin_Random_House_Logo.svg.png",
+            "advertising_url": "https://www.penguinrandomhouse.com/wp-content/uploads/2018/10/PRH_HOMEPAGE_BANNER_1400X700.jpg"
+        }
+    ],
+    "Kubernetes": [
+        {
+            "name": "Google Cloud Platform",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Google_Cloud_Platform_Logo.svg/1200px-Google_Cloud_Platform_Logo.svg.png",
+            "advertising_url": "https://cloud.google.com/images/gcp-logo-vertical.svg"
+        },
+        {
+            "name": "Red Hat OpenShift",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/OpenShift_logo.svg/1200px-OpenShift_logo.svg.png",
+            "advertising_url": "https://www.redhat.com/cms/managed-files/openshift-banner.jpg"
+        }
+    ],
+    "Parenting": [
+        {
+            "name": "Parenting Magazine",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Parenting_magazine_logo.svg/1200px-Parenting_magazine_logo.svg.png",
+            "advertising_url": "https://www.parenting.com/sites/parenting.com/files/styles/hero/public/hero-images/parenting-september-2018.jpg?itok=8VfSEbmz"
+        },
+        {
+            "name": "Parents Magazine",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Parents_%28magazine%29_logo.svg/1200px-Parents_%28magazine%29_logo.svg.png",
+            "advertising_url": "https://www.parents.com/wp-content/uploads/2018/08/01_Parents_Brand_Strip_1280x600.jpg"
+        }
+    ],
+    "Travel": [
+        {
+            "name": "Expedia",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Expedia_logo.svg/1200px-Expedia_logo.svg.png",
+            "advertising_url": "https://media.expedia.com/expus/brand-assets/expedia/expedia-hero-image.jpg"
+        },
+        {
+            "name": "Booking.com",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Booking.com_logo_2016.svg/1200px-Booking.com_logo_2016.svg.png",
+            "advertising_url": "https://dz7u9q3vpd4eo.cloudfront.net/bk-pl-hero-page/2.0.68/static/img/hero-page/hero-page-bg-v1.jpg"
+        }
+    ],
+    "Venture Capital": [
+        {
+            "name": "Sequoia Capital",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sequoia_Capital_logo.svg/1200px-Sequoia_Capital_logo.svg.png",
+            "advertising_url": "https://www.sequoiacap.com/wp-content/uploads/2018/09/Sequoia-Cape-Homepage-Banner-V2.jpg"
+        },
+        {
+            "name": "Andreessen Horowitz",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Andreessen_Horowitz_logo.svg/1200px-Andreessen_Horowitz_logo.svg.png",
+            "advertising_url": "https://a16z.com/wp-content/uploads/2018/09/a16z-hero-banner-blog-1.jpg"
+        }
+    ],
+    "Poetry": [
+        {
+            "name": "The Poetry Foundation",
+            "logo_url": "https://www.poetryfoundation.org/templates/images/pf_logo.svg",
+            "advertising_url": "https://www.poetryfoundation.org/templates/images/pf_logo.svg"
+        },
+        {
+            "name": "Poetry Magazine",
+            "logo_url": "https://www.poetrymagazine.org/assets/img/logo.svg",
+            "advertising_url": "https://www.poetrymagazine.org/assets/img/poetry-magazine-logo-for-ads.jpg"
+        }
+    ],
+    "Food": [
+        {
+            "name": "McDonald's",
+            "logo_url": "https://www.mcdonalds.com/content/dam/usa/promotions/mobile/mcd-k-12-hero-image.jpg",
+            "advertising_url": "https://www.mcdonalds.com/content/dam/usa/promotions/mobile/mcd-k-12-hero-image.jpg"
+        },
+        {
+            "name": "Subway",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_Subway_2013.svg/1024px-Logo_Subway_2013.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Subway_logo.svg/1200px-Subway_logo.svg.png"
+        }
+    ],
+    "Typescript": [
+        {
+            "name": "Microsoft",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Microsoft_logo_%282012%29.svg/1024px-Microsoft_logo_%282012%29.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Microsoft_logo_%282012%2C_August_2019%29.svg/1200px-Microsoft_logo_%282012%2C_August_2019%29.svg.png"
+        },
+        {
+            "name": "TypeScript",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/TypeScript_Logo.svg/1024px-TypeScript_Logo.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/TypeScript_Logo.svg/1024px-TypeScript_Logo.svg.png"
+        }
+    ],
+    "Language": [
+        {
+            "name": "Rosetta Stone",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rosetta_Stone_Logo.svg/1024px-Rosetta_Stone_Logo.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rosetta_Stone_Logo.svg/1024px-Rosetta_Stone_Logo.svg.png"
+        },
+        {
+            "name": "Duolingo",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Duolingo_logo.svg/1024px-Duolingo_logo.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Duolingo_Logo_2017.svg/1024px-Duolingo_Logo_2017.svg.png"
+        }
+    ],
+    "Gaming": [
+        {
+            "name": "PlayStation",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Playstation_logo.svg/1024px-Playstation_logo.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Playstation_logo.svg/1024px-Playstation_logo.svg.png"
+        },
+        {
+            "name": "Xbox",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Xbox_one_logo.svg/1024px-Xbox_one_logo.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Xbox_logo.svg/1024px-Xbox_logo.svg.png"
+        }
+    ],
+    "Space": [
+        {
+            "name": "NASA",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1024px-NASA_logo.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1024px-NASA_logo.svg.png"
+        },
+        {
+            "name": "SpaceX",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/SpaceX-Logo.svg/1024px-SpaceX-Logo.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/SpaceX-Logo.svg/1024px-SpaceX-Logo.svg.png"
+        }
+    ],
+    "Sports": [
+        {
+            "name": "Nike",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1024px-Logo_NIKE.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Nike_Logo.svg/1200px-Nike_Logo.svg.png"
+        },
+        {
+            "name": "Adidas",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/1024px-Adidas_Logo.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Adidas_Logo.svg/1024px-Adidas_Logo.svg.png"
+        }
+    ],
+    "Media": [
+        {
+            "name": "Netflix",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Logo_Netflix.svg/1024px-Logo_Netflix.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Logo_Netflix.svg/1024px-Logo_Netflix.svg.png"
+        },
+        {
+            "name": "Youtube",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1024px-YouTube_Logo_2017.svg.png",
+            "advertising_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1024px-YouTube_Logo_2017.svg.png"
+        }
+    ],
+    "Docker": [
+        {
+            "name": "Docker Inc.",
+            "logo_url": "https://www.docker.com/sites/all/themes/docker/assets/images/logo_horizontal.png",
+            "advertising_url": "https://www.docker.com/why-docker"
+        },
+        {
+            "name": "Red Hat",
+            "logo_url": "https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/logo.svg",
+            "advertising_url": "https://www.redhat.com/en/technologies/containers/docker"
+        }
+    ],
+    "Race": [
+        {
+            "name": "NASCAR",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/NASCAR_logo.svg/1200px-NASCAR_logo.svg.png",
+            "advertising_url": "https://www.nascar.com/fans/marketing-opportunities/"
+        },
+        {
+            "name": "IndyCar",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/65/IndyCar_Series_logo.svg/1200px-IndyCar_Series_logo.svg.png",
+            "advertising_url": "https://www.indycar.com/Sponsorship"
+        }
+    ],
+    "Math": [
+        {
+            "name": "Khan Academy",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Khan_Academy_logo.svg/1200px-Khan_Academy_logo.svg.png",
+            "advertising_url": "https://www.khanacademy.org/donate"
+        },
+        {
+            "name": "Math.com",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Math.com_Logo.svg/1200px-Math.com_Logo.svg.png",
+            "advertising_url": "https://www.math.com/advertise.html"
+        }
+    ],
+    "Photography": [
+        {
+            "name": "Canon",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Canon_logo.svg/1200px-Canon_logo.svg.png",
+            "advertising_url": "https://www.canon.com/web/en/ads/index.html"
+        },
+        {
+            "name": "Nikon",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Nikon_logo.svg/1200px-Nikon_logo.svg.png",
+            "advertising_url": "https://nikon.com/about/ad.htm"
+        }
+    ],
+    "Music": [
+        {
+            "name": "Spotify",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1200px-Spotify_logo_without_text.svg.png",
+            "advertising_url": "https://www.spotify.com/us/brand-marketing/"
+        },
+        {
+            "name": "Apple Music",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Apple_Music_logo.svg/1200px-Apple_Music_logo.svg.png",
+            "advertising_url": "https://www.apple.com/marketing/apple-music/"
+        }
+    ],
+    "Justice": [
+        {
+            "name": "Innocence Project",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Innocence_Project_Logo.svg/1200px-Innocence_Project_Logo.svg.png",
+            "advertising_url": "https://www.innocenceproject.org/donate/"
+        },
+        {
+            "name": "ACLU",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/3/34/ACLU_Logo.svg/1200px-ACLU_Logo.svg.png",
+            "advertising_url": "https://www.aclu.org/donate"
+        }
+    ],
+    "Data Engineering": [
+        {
+            "name": "Cloudera",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Cloudera_Logo.svg/1200px-Cloudera_Logo.svg.png",
+            "advertising_url": "https://www.cloudera.com/products/data-engineering.html"
+        },
+        {
+            "name": "Amazon Web Services",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png",
+            "advertising_url": "https://aws.amazon.com/data-engineering/"
+        }
+    ],
+    "Film": [
+        {
+            "name": "Paramount Pictures",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Paramount_Pictures_logo_2016.svg/1200px-Paramount_Pictures_logo_2016.svg.png",
+            "advertising_url": "https://www.paramount.com/brand-partnerships"
+        },
+        {
+            "name": "Sony Pictures",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Sony_Pictures_logo.svg/1200px-Sony_Pictures_logo.svg.png",
+            "advertising_url": "https://www.sonypictures.com/corp/brand_partnerships.html"
+        }
+    ],
+    "Angular": [
+        {
+            "name": "Google",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png",
+            "advertising_url": "https://www.google.com/ads/angularjs/#?modal_active=none"
+        },
+        {
+            "name": "Microsoft",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1200px-Microsoft_logo_%282012%29.svg.png",
+            "advertising_url": "https://azure.microsoft.com/en-us/blog/angular-on-azure/"
+        }
+    ]
+}

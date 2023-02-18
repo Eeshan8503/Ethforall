@@ -1,9 +1,277 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import AdvBanner from "./AdvBanner";
 
 export default function loggedIn() {
   const [isMetamaskConnected, setIsMetamaskConnected] = useState();
   const [searchValue, setSearchValue] = useState("");
+  const [niche, setNiche] = useState("Life");
+  var nicheWeights = {
+    Programming: 0,
+    "Data Science": 0,
+    Technology: 0,
+    "Self Improvement": 0,
+    Writing: 0,
+    Relationships: 0,
+    "Machine Learning": 0,
+    Productivity: 0,
+    Politics: 0,
+    Cryptocurrency: 0,
+    Psychology: 0,
+    Money: 0,
+    Business: 0,
+    Python: 0,
+    Health: 0,
+    Science: 0,
+    "Mental Health": 0,
+    Life: 0,
+    "Software Development": 0,
+    Startup: 0,
+    Design: 0,
+    "Java Script": 0,
+    "Artificial Intelligence": 0,
+    Culture: 0,
+    "Software Engineering": 0,
+    Blockchain: 0,
+    Coding: 0,
+    Entrepreneurship: 0,
+    React: 0,
+    UX: 0,
+    Education: 0,
+    History: 0,
+    Humor: 0,
+    "Web Development": 0,
+    Work: 0,
+    Lifestyle: 0,
+    Society: 0,
+    "Deep Learning": 0,
+    Marketing: 0,
+    Books: 0,
+    Nft: 0,
+    "Social Media": 0,
+    Leadership: 0,
+    Android: 0,
+    Apple: 0,
+    Women: 0,
+    Mindfulness: 0,
+    Sexuality: 0,
+    Fitness: 0,
+    AWS: 0,
+    Flutter: 0,
+    "UX Design": 0,
+    Spirituality: 0,
+    Creativity: 0,
+    Nodejs: 0,
+    UI: 0,
+    Defi: 0,
+    "This Happened To Me": 0,
+    Philosophy: 0,
+    NLP: 0,
+    Economics: 0,
+    World: 0,
+    "Dev Ops": 0,
+    Ethereum: 0,
+    "Product Management": 0,
+    "Data Visualization": 0,
+    Feminism: 0,
+    Equality: 0,
+    Freelancing: 0,
+    "Climate Change": 0,
+    Bitcoin: 0,
+    OS: 0,
+    Future: 0,
+    Cybersecurity: 0,
+    Nonfiction: 0,
+    "True Crime": 0,
+    "Web 3": 0,
+    Java: 0,
+    Religion: 0,
+    Art: 0,
+    Family: 0,
+    Fiction: 0,
+    Kubernetes: 0,
+    Parenting: 0,
+    Travel: 0,
+    "Venture Capital": 0,
+    Poetry: 0,
+    Food: 0,
+    Typescript: 0,
+    Language: 0,
+    Gaming: 0,
+    Space: 0,
+    Sports: 0,
+    Media: 0,
+    Docker: 0,
+    Race: 0,
+    Math: 0,
+    Photography: 0,
+    Music: 0,
+    Justice: 0,
+    "Data Engineering": 0,
+    Film: 0,
+    Angular: 0,
+  };
+  const [nicheWeights, setNicheWeights] = useState({
+    Programming: 0,
+    "Data Science": 0,
+    Technology: 0,
+    "Self Improvement": 0,
+    Writing: 0,
+    Relationships: 0,
+    "Machine Learning": 0,
+    Productivity: 0,
+    Politics: 0,
+    Cryptocurrency: 0,
+    Psychology: 0,
+    Money: 0,
+    Business: 0,
+    Python: 0,
+    Health: 0,
+    Science: 0,
+    "Mental Health": 0,
+    Life: 0,
+    "Software Development": 0,
+    Startup: 0,
+    Design: 0,
+    "Java Script": 0,
+    "Artificial Intelligence": 0,
+    Culture: 0,
+    "Software Engineering": 0,
+    Blockchain: 0,
+    Coding: 0,
+    Entrepreneurship: 0,
+    React: 0,
+    UX: 0,
+    Education: 0,
+    History: 0,
+    Humor: 0,
+    "Web Development": 0,
+    Work: 0,
+    Lifestyle: 0,
+    Society: 0,
+    "Deep Learning": 0,
+    Marketing: 0,
+    Books: 0,
+    Nft: 0,
+    "Social Media": 0,
+    Leadership: 0,
+    Android: 0,
+    Apple: 0,
+    Women: 0,
+    Mindfulness: 0,
+    Sexuality: 0,
+    Fitness: 0,
+    AWS: 0,
+    Flutter: 0,
+    "UX Design": 0,
+    Spirituality: 0,
+    Creativity: 0,
+    Nodejs: 0,
+    UI: 0,
+    Defi: 0,
+    "This Happened To Me": 0,
+    Philosophy: 0,
+    NLP: 0,
+    Economics: 0,
+    World: 0,
+    "Dev Ops": 0,
+    Ethereum: 0,
+    "Product Management": 0,
+    "Data Visualization": 0,
+    Feminism: 0,
+    Equality: 0,
+    Freelancing: 0,
+    "Climate Change": 0,
+    Bitcoin: 0,
+    OS: 0,
+    Future: 0,
+    Cybersecurity: 0,
+    Nonfiction: 0,
+    "True Crime": 0,
+    "Web 3": 0,
+    Java: 0,
+    Religion: 0,
+    Art: 0,
+    Family: 0,
+    Fiction: 0,
+    Kubernetes: 0,
+    Parenting: 0,
+    Travel: 0,
+    "Venture Capital": 0,
+    Poetry: 0,
+    Food: 0,
+    Typescript: 0,
+    Language: 0,
+    Gaming: 0,
+    Space: 0,
+    Sports: 0,
+    Media: 0,
+    Docker: 0,
+    Race: 0,
+    Math: 0,
+    Photography: 0,
+    Music: 0,
+    Justice: 0,
+    "Data Engineering": 0,
+    Film: 0,
+    Angular: 0,
+  });
+
+  //define useEffect
+
+  const getUserData = async () => {
+    const accounts = await window.ethereum.request({
+      method: "eth_accounts",
+    });
+    const data = await fetch("http://localhost:5000/api/getUser", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        account: accounts[0],
+      }),
+    });
+    const res = await data.json();
+    setNicheWeights(res);
+    console.log(res);
+  };
+
+  const updateUserNicheWeights = async () => {
+    setNicheWeights((prevNicheWeights) => {
+      const updatedNicheWeights = { ...prevNicheWeights };
+      niche.forEach((n) => {
+        if (updatedNicheWeights.hasOwnProperty(n)) {
+          updatedNicheWeights[n] += 1;
+        }
+      });
+    });
+
+    const accounts = await window.ethereum.request({
+      method: "eth_accounts",
+    });
+    const data = await fetch("http://localhost:5000/api/updateUser", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        account: accounts[0],
+        data: nicheWeights,
+      }),
+    });
+    const res = await data.json();
+    setNicheWeights(res);
+    console.log(res);
+  };
+
+  useEffect(() => {
+    getUserData();
+  }, []);
+  useEffect(() => {
+    updateUserNicheWeights();
+  }, [niche]);
+
   const connectMetamask = async () => {
     if (typeof window.ethereum !== "undefined") {
       try {
@@ -20,6 +288,26 @@ export default function loggedIn() {
   };
   const handleSearchInput = (event) => {
     setSearchValue(event);
+  };
+  const getNiche = async (e) => {
+    e.preventDefault();
+    console.log(niche);
+    // console.log(`Calling OpenAI... ${searchValue}`);
+    // try {
+    //   const response = await fetch("/api/generate", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ searchValue }),
+    //   });
+    //   const reply = await response.json();
+    //   setNiche(reply);
+    //   console.log("OpenAI replied...", reply);
+    // } catch (error) {
+
+    //   console.log(error);
+    // }
   };
 
   useEffect(() => {
@@ -485,26 +773,34 @@ export default function loggedIn() {
           <div>
             <div className="min-w-screen min-h-screen bg-gray-800 flex px-5 py-5">
               <div
-                className="w-full mx-auto rounded-xl bg-gray-100 shadow-lg p-10 text-gray-800 relative overflow-hidden resize-x min-w-80 max-w-3xl"
+                className="w-full rounded-xl bg-slate-900 shadow-lg p-10 text-gray-800 relative overflow-hidden resize-x min-w-80 max-w-8xl"
                 x-data="app()"
                 x-init="generatePassword()"
               >
-                <div className="relative mt-1">
-                  <input
-                    type="text"
-                    id="password"
-                    className="w-full pl-3 pr-10 py-2 border-2 border-gray-200 rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500 transition-colors"
-                    placeholder="Search..."
-                    onChange={handleSearchInput}
-                  />
-                </div>
-                <div className="absolute top-0 left-0 w-full h-2 flex">
-                  <div className="h-2 bg-blue-500 flex-1"></div>
-                  <div className="h-2 bg-red-500 flex-1"></div>
-                  <div className="h-2 bg-yellow-500 flex-1"></div>
-                  <div className="h-2 bg-blue-500 flex-1"></div>
-                  <div className="h-2 bg-green-500 flex-1"></div>
-                  <div className="h-2 bg-red-500 flex-1"></div>
+                <div className="min-h-screen bg-gray-100 flex flex-col ">
+                  <div className="relative p-12 w-full sm:max-w-2xl sm:mx-auto">
+                    <div className="overflow-hidden z-0 rounded-full relative p-3">
+                      <form className="relative flex z-50 bg-slate-900 rounded-full">
+                        <input
+                          type="text"
+                          placeholder="enter your search here"
+                          className="rounded-full flex-1 px-6 py-4 bg-slate-900 text-white focus:outline-none"
+                          onChange={(e) => handleSearchInput(e.target.value)}
+                        />
+                        {searchValue && (
+                          <button
+                            className="bg-indigo-500 text-white rounded-full font-semibold px-8 py-4 hover:bg-indigo-400 focus:bg-indigo-600 focus:outline-none"
+                            onClick={(e) => {
+                              getNiche(e);
+                            }}
+                          >
+                            Search
+                          </button>
+                        )}
+                      </form>
+                    </div>
+                    <AdvBanner imageUrl="https://content.hostgator.com/img/ads_logo.png" />
+                  </div>
                 </div>
               </div>
             </div>

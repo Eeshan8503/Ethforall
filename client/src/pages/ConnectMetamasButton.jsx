@@ -9,7 +9,7 @@ function ConnectMetamasButton() {
         const accounts = await window.ethereum.request({
           method: "eth_accounts",
         });
-        alert(`Connected with MetaMask: ${accounts[0]}`);
+        // alert(`Connected with MetaMask: ${accounts[0]}`);
         setAccount(accounts[0]);
         setIsConnected(true);
         onValueFromChild(isConnected);
@@ -911,7 +911,12 @@ function ConnectMetamasButton() {
               </clipPath>{" "}
             </defs>{" "}
           </svg>
-          <p>{account}</p>
+          <p>
+            {/* display in a paragraph tag the first 5 and the last 3 characters of the string in {account} */}
+            {account.substring(0, 5) +
+              "..." +
+              account.substring(account.length - 3)}
+          </p>
         </button>
       )}
     </div>

@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const controller = require("../controller/controller");
 
-router.post('/initUser',controller.initAccount);
+router.post("/initUser", controller.initAccount);
 /*
     To use this route 
     required arguements are:
@@ -22,10 +22,9 @@ router.post('/initUser',controller.initAccount);
             Success or failure status
 */
 
-module.exports=router
+module.exports = router;
 
-
-router.post('/updateUser',controller.uploadFile);
+router.post("/updateUser", controller.uploadFile);
 /*
     To use this route
     the requred data is:
@@ -49,7 +48,7 @@ router.post('/updateUser',controller.uploadFile);
          returned value:
             Success or failure status
 */
-router.get('/getUser',controller.getFile)
+router.get("/getUser", controller.getFile);
 /*
         To use this route 
     required arguements are:

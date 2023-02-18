@@ -5,9 +5,6 @@ import Navbar from "./Navbar";
 import ConnectMetamasButton from "./ConnectMetamasButton";
 import AboutSection from "./AboutSection";
 import PreferenceSection from "./PreferenceSection";
-import loggedIn from "./loggedIn";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [isMetamaskConnected, setIsMetamaskConnected] = useState(false);
