@@ -1,138 +1,37 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import AdvBanner from "./AdvBanner";
-import data from "../../DATA/nicheWeight.json";
+import axios from 'axios';
+
 
 export default function loggedIn() {
-  console.log(data);
+
   const [isMetamaskConnected, setIsMetamaskConnected] = useState();
   const [searchValue, setSearchValue] = useState("");
   const [niche, setNiche] = useState(["Life", "Everything"]);
-  // var nicheWeights = {
-  //   Programming: 0,
-  //   "Data Science": 0,
-  //   Technology: 0,
-  //   "Self Improvement": 0,
-  //   Writing: 0,
-  //   Relationships: 0,
-  //   "Machine Learning": 0,
-  //   Productivity: 0,
-  //   Politics: 0,
-  //   Cryptocurrency: 0,
-  //   Psychology: 0,
-  //   Money: 0,
-  //   Business: 0,
-  //   Python: 0,
-  //   Health: 0,
-  //   Science: 0,
-  //   "Mental Health": 0,
-  //   Life: 0,
-  //   "Software Development": 0,
-  //   Startup: 0,
-  //   Design: 0,
-  //   "Java Script": 0,
-  //   "Artificial Intelligence": 0,
-  //   Culture: 0,
-  //   "Software Engineering": 0,
-  //   Blockchain: 0,
-  //   Coding: 0,
-  //   Entrepreneurship: 0,
-  //   React: 0,
-  //   UX: 0,
-  //   Education: 0,
-  //   History: 0,
-  //   Humor: 0,
-  //   "Web Development": 0,
-  //   Work: 0,
-  //   Lifestyle: 0,
-  //   Society: 0,
-  //   "Deep Learning": 0,
-  //   Marketing: 0,
-  //   Books: 0,
-  //   Nft: 0,
-  //   "Social Media": 0,
-  //   Leadership: 0,
-  //   Android: 0,
-  //   Apple: 0,
-  //   Women: 0,
-  //   Mindfulness: 0,
-  //   Sexuality: 0,
-  //   Fitness: 0,
-  //   AWS: 0,
-  //   Flutter: 0,
-  //   "UX Design": 0,
-  //   Spirituality: 0,
-  //   Creativity: 0,
-  //   Nodejs: 0,
-  //   UI: 0,
-  //   Defi: 0,
-  //   "This Happened To Me": 0,
-  //   Philosophy: 0,
-  //   NLP: 0,
-  //   Economics: 0,
-  //   World: 0,
-  //   "Dev Ops": 0,
-  //   Ethereum: 0,
-  //   "Product Management": 0,
-  //   "Data Visualization": 0,
-  //   Feminism: 0,
-  //   Equality: 0,
-  //   Freelancing: 0,
-  //   "Climate Change": 0,
-  //   Bitcoin: 0,
-  //   OS: 0,
-  //   Future: 0,
-  //   Cybersecurity: 0,
-  //   Nonfiction: 0,
-  //   "True Crime": 0,
-  //   "Web 3": 0,
-  //   Java: 0,
-  //   Religion: 0,
-  //   Art: 0,
-  //   Family: 0,
-  //   Fiction: 0,
-  //   Kubernetes: 0,
-  //   Parenting: 0,
-  //   Travel: 0,
-  //   "Venture Capital": 0,
-  //   Poetry: 0,
-  //   Food: 0,
-  //   Typescript: 0,
-  //   Language: 0,
-  //   Gaming: 0,
-  //   Space: 0,
-  //   Sports: 0,
-  //   Media: 0,
-  //   Docker: 0,
-  //   Race: 0,
-  //   Math: 0,
-  //   Photography: 0,
-  //   Music: 0,
-  //   Justice: 0,
-  //   "Data Engineering": 0,
-  //   Film: 0,
-  //   Angular: 0,
-  // };
-  const [nicheWeights, setNicheWeights] = useState(JSON.parse(data));
+  const [nicheWeights, setNicheWeights] = useState();
 
-  //define useEffect
+  // define useEffect
+  useEffect(() => {
+    getUserData();
+  }, []);
 
   const getUserData = async () => {
     const accounts = await window.ethereum.request({
       method: "eth_accounts",
     });
-    const data = await fetch("http://localhost:5000/api/getUser", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        account: accounts[0],
-      }),
+    //axios get request to http://localhost:5000/api/getUser
+    
+    try {
+    const response = await axios.get("http://localhost:5000/api/getUser", {
+      data: {
+        account: "0x56521AaC3E2a69d09965EF0c078C4eAE6b39F35B"
+      }
     });
-    const res = await data.json();
-    setNicheWeights(res);
-    console.log(res);
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
   };
 
   const updateUserNicheWeights = async () => {
@@ -162,15 +61,11 @@ export default function loggedIn() {
     });
     const res = await data.json();
     setNicheWeights(res);
-    console.log(res);
+    // console.log(res);
   };
-
-  useEffect(() => {
-    getUserData();
-  }, []);
-  useEffect(() => {
-    updateUserNicheWeights();
-  }, [niche]);
+  // useEffect(() => {
+  //   updateUserNicheWeights();
+  // }, [niche]);
 
   const connectMetamask = async () => {
     if (typeof window.ethereum !== "undefined") {
@@ -191,7 +86,7 @@ export default function loggedIn() {
   };
   const getNiche = async (e) => {
     e.preventDefault();
-    console.log(niche);
+    // console.log(niche);
     // console.log(`Calling OpenAI... ${searchValue}`);
     // try {
     //   const response = await fetch("/api/generate", {

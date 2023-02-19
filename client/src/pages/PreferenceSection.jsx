@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import axios from 'axios';
 
 function PreferenceSection() {
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [nicheWeights, setNicheWeights] = useState({
     Programming: 0,
-    "Data Science": 0,
+    Data_Science: 0,
     Technology: 0,
-    "Self Improvement": 0,
+    Self_Improvement: 0,
     Writing: 0,
     Relationships: 0,
-    "Machine Learning": 0,
+    Machine_Learning: 0,
     Productivity: 0,
     Politics: 0,
     Cryptocurrency: 0,
@@ -20,15 +21,15 @@ function PreferenceSection() {
     Python: 0,
     Health: 0,
     Science: 0,
-    "Mental Health": 0,
+    Mental_Health: 0,
     Life: 0,
-    "Software Development": 0,
+    Software_Development: 0,
     Startup: 0,
     Design: 0,
-    "Java Script": 0,
-    "Artificial Intelligence": 0,
+    Java_Script: 0,
+    Artificial_Intelligence: 0,
     Culture: 0,
-    "Software Engineering": 0,
+    Software_Engineering: 0,
     Blockchain: 0,
     Coding: 0,
     Entrepreneurship: 0,
@@ -37,15 +38,15 @@ function PreferenceSection() {
     Education: 0,
     History: 0,
     Humor: 0,
-    "Web Development": 0,
+    Web_Development: 0,
     Work: 0,
     Lifestyle: 0,
     Society: 0,
-    "Deep Learning": 0,
+    Deep_Learning: 0,
     Marketing: 0,
     Books: 0,
     Nft: 0,
-    "Social Media": 0,
+    Social_Media: 0,
     Leadership: 0,
     Android: 0,
     Apple: 0,
@@ -55,32 +56,32 @@ function PreferenceSection() {
     Fitness: 0,
     AWS: 0,
     Flutter: 0,
-    "UX Design": 0,
+    UX_Design: 0,
     Spirituality: 0,
     Creativity: 0,
     Nodejs: 0,
     UI: 0,
     Defi: 0,
-    "This Happened To Me": 0,
+    This_Happened_To_Me: 0,
     Philosophy: 0,
     NLP: 0,
     Economics: 0,
     World: 0,
-    "Dev Ops": 0,
+    Dev_Ops: 0,
     Ethereum: 0,
-    "Product Management": 0,
-    "Data Visualization": 0,
+    Product_Management: 0,
+    Data_Visualization: 0,
     Feminism: 0,
     Equality: 0,
     Freelancing: 0,
-    "Climate Change": 0,
+    Climate_Change: 0,
     Bitcoin: 0,
     OS: 0,
     Future: 0,
     Cybersecurity: 0,
     Nonfiction: 0,
-    "True Crime": 0,
-    "Web 3": 0,
+    True_Crime: 0,
+    Web_3: 0,
     Java: 0,
     Religion: 0,
     Art: 0,
@@ -89,7 +90,7 @@ function PreferenceSection() {
     Kubernetes: 0,
     Parenting: 0,
     Travel: 0,
-    "Venture Capital": 0,
+    Venture_Capital: 0,
     Poetry: 0,
     Food: 0,
     Typescript: 0,
@@ -104,23 +105,18 @@ function PreferenceSection() {
     Photography: 0,
     Music: 0,
     Justice: 0,
-    "Data Engineering": 0,
+    Data_Engineering: 0,
     Film: 0,
     Angular: 0,
   });
 
   const updateNiches = () => {
-    const updatedNicheWeights = { ...nicheWeights };
-
+    // traverse through selectedTopics and increment nicheWeights[selectedTopic]+1
     selectedTopics.forEach((topic) => {
-      if (updatedNicheWeights.hasOwnProperty(topic)) {
-        updatedNicheWeights[topic]++;
-      } else {
-        updatedNicheWeights[topic] = 1;
-      }
-    });
-    console.log(updatedNicheWeights);
-    setNicheWeights(updatedNicheWeights);
+      nicheWeights[topic] +=1;
+    }
+    );
+    console.log(nicheWeights);
   };
 
   const userInit = async () => {
@@ -137,25 +133,21 @@ function PreferenceSection() {
       alert("Please install MetaMask to connect");
     }
 
-    // get metamask connected acoount
+    updateNiches();
+
     const accounts = await window.ethereum.request({
       method: "eth_accounts",
     });
-    updateNiches();
-    console.log(nicheWeights);
 
-    const data = await fetch("http://localhost:5000/api/initUser", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        account: accounts[0],
+    try {
+      const data = await axios.post("http://localhost:5000/api/initUser", {
+        account: "0x56521AaC3E2a69d09965EF0c078C4eAE6b39F35B",
         data: nicheWeights,
-      }),
-    });
-    const res = await data.json();
-    console.log(res);
+      });
+    } catch (error) {
+      console.log("error");
+    }
+    window.location.href = "http://localhost:3000/loggedIn";
   };
 
   const handleTopicSelection = (topic) => {
@@ -303,27 +295,25 @@ function PreferenceSection() {
         <>
           <div className="flex items-center justify-center">
             {selectedTopics.length > 0 && (
-              <Link href="/loggedIn">
-                <div className="m-3">
-                  <button
-                    className="bg-white text-gray-800 font-bold rounded border-b-2 border-blue-500 hover:border-blue-600 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
-                    onClick={userInit}
+              <div className="m-3">
+                <button
+                  className="bg-white text-gray-800 font-bold rounded border-b-2 border-blue-500 hover:border-blue-600 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center"
+                  onClick={userInit}
+                >
+                  <span className="mr-2">Create Account!</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
                   >
-                    <span className="mr-2">Create Account!</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="currentcolor"
-                        d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
-              </Link>
+                    <path
+                      fill="currentcolor"
+                      d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
             )}
           </div>
         </>

@@ -57,7 +57,7 @@ router.get("/getUser", controller.getFile);
         {
             "account":"0x34..."
         }
-        POST request
+        GET request
 
         returned value:
             A json file containing the niche and the weight os the perticular user
