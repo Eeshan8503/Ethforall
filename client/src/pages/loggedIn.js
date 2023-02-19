@@ -7,65 +7,193 @@ import axios from 'axios';
 export default function loggedIn() {
 
   const [isMetamaskConnected, setIsMetamaskConnected] = useState();
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState('');
   const [niche, setNiche] = useState(["Life", "Everything"]);
-  const [nicheWeights, setNicheWeights] = useState();
+  var customSearchValue;
+  var checkRyzen = false;
+  var i =0;
+  if(searchValue === 'Ryzen'){
+    checkRyzen = true;
+  }
+
+  var appleLogoUrl =
+    "https://media.idownloadblog.com/wp-content/uploads/2019/02/Apple-logo-white-glowing-black-background-full-e1550092333612.png";
+  var advUrls = [
+    "https://content.hostgator.com/img/ads_logo.png",
+    "https://www.saregama.com/blog/wp-content/uploads/2021/04/Yoga-And-Meditation-To-Stay-Mentally.jpg",
+    "https://visit.bodleian.ox.ac.uk/sites/default/files/styles/listing_landscape_image/public/bodwhatson/images/media/1920x520artofadvertising2.jpg?itok=3JLvi5IB",
+    "https://static.toiimg.com/thumb/msid-74593097,imgsize-133195,width-800,height-600,resizemode-75/74593097.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbgg31Tct3USXBhNabDfLsrrIGn3haU0pRChRtCuWMcQ&usqp=CAU&ec=48600112",
+    "https://cdn.ceoworld.biz/wp-content/uploads/2021/03/wealthy-photographer.jpg",
+    "https://i.ytimg.com/vi/ejNIow5DPUM/maxresdefault.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFAoTRCHLfhXMhj7Tyn0rQJCXd_Iq9_x9l2n06zc_JYh55JaBS8YeRbWkH8T7XOuoyKYgFo93CPw&usqp=CAU&ec=48600112",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7T3PMBtvQpGrZO0DqSzlNPRKFiXHNTdZ_PWIV_-Vbug&usqp=CAU&ec=48600112",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5iCGlOYq2ff6I-sC6uAWxy8LFbXU9R_jtXoT2X_ZcTQ&usqp=CAU&ec=48600112",
+    "https://thumbs.dreamstime.com/b/music-banner-mobile-smartphone-screen-music-application-sound-headphones-audio-voice-radio-beats-black-music-banner-221042724.jpg",
+    "https://static.vecteezy.com/system/resources/thumbnails/007/286/713/small/afro-girl-enjoying-music-wearing-sunglasses-and-headphone-banner-vector.jpg",
+    "https://media.idownloadblog.com/wp-content/uploads/2019/02/Apple-logo-white-glowing-black-background-full-e1550092333612.png",
+  ];
+  var nicheWeights = {
+    Programming: 0,
+    Data_Science: 0,
+    Technology: 0,
+    Self_Improvement: 0,
+    Writing: 0,
+    Relationships: 0,
+    Machine_Learning: 0,
+    Productivity: 0,
+    Politics: 0,
+    Cryptocurrency: 0,
+    Psychology: 0,
+    Money: 0,
+    Business: 0,
+    Python: 0,
+    Health: 0,
+    Science: 0,
+    Mental_Health: 0,
+    Life: 0,
+    Software_Development: 0,
+    Startup: 0,
+    Design: 0,
+    Java_Script: 0,
+    Artificial_Intelligence: 0,
+    Culture: 0,
+    Software_Engineering: 0,
+    Blockchain: 0,
+    Coding: 0,
+    Entrepreneurship: 0,
+    React: 0,
+    UX: 0,
+    Education: 0,
+    History: 0,
+    Humor: 0,
+    Web_Development: 0,
+    Work: 0,
+    Lifestyle: 0,
+    Society: 0,
+    Deep_Learning: 0,
+    Marketing: 0,
+    Books: 0,
+    Nft: 0,
+    Social_Media: 0,
+    Leadership: 0,
+    Android: 0,
+    Apple: 0,
+    Women: 0,
+    Mindfulness: 0,
+    Sexuality: 0,
+    Fitness: 0,
+    AWS: 0,
+    Flutter: 0,
+    UX_Design: 0,
+    Spirituality: 0,
+    Creativity: 0,
+    Nodejs: 0,
+    UI: 0,
+    Defi: 0,
+    This_Happened_To_Me: 0,
+    Philosophy: 0,
+    NLP: 0,
+    Economics: 0,
+    World: 0,
+    Dev_Ops: 0,
+    Ethereum: 0,
+    Product_Management: 0,
+    Data_Visualization: 0,
+    Feminism: 0,
+    Equality: 0,
+    Freelancing: 0,
+    Climate_Change: 0,
+    Bitcoin: 0,
+    OS: 0,
+    Future: 0,
+    Cybersecurity: 0,
+    Nonfiction: 0,
+    True_Crime: 0,
+    Web_3: 0,
+    Java: 0,
+    Religion: 0,
+    Art: 0,
+    Family: 0,
+    Fiction: 0,
+    Kubernetes: 0,
+    Parenting: 0,
+    Travel: 0,
+    Venture_Capital: 0,
+    Poetry: 0,
+    Food: 0,
+    Typescript: 0,
+    Language: 0,
+    Gaming: 0,
+    Space: 0,
+    Sports: 0,
+    Media: 0,
+    Docker: 0,
+    Race: 0,
+    Math: 0,
+    Photography: 0,
+    Music: 0,
+    Justice: 0,
+    Data_Engineering: 0,
+    Film: 0,
+    Angular: 0,
+  };
+  var imageUrl =
+    "https://thumbs.dreamstime.com/b/music-banner-mobile-smartphone-screen-music-application-sound-headphones-audio-voice-radio-beats-black-music-banner-221042724.jpg";
+
+  function selectRandomImageUrl() {
+    return advUrls[Math.floor(Math.random() * advUrls.length)];
+  }
 
   // define useEffect
   useEffect(() => {
     getUserData();
   }, []);
+  useEffect(() => {
+    imageUrl = advUrls[Math.floor(Math.random() * advUrls.length)];
+  }, [imageUrl]);
 
   const getUserData = async () => {
     const accounts = await window.ethereum.request({
       method: "eth_accounts",
     });
-    //axios get request to http://localhost:5000/api/getUser
     
     try {
-    const response = await axios.get("http://localhost:5000/api/getUser", {
-      data: {
-        account: "0x56521AaC3E2a69d09965EF0c078C4eAE6b39F35B"
-      }
-    });
-    console.log(response);
-  } catch (error) {
+      
+      const data = await axios.get("http://localhost:5000/api/getUser", {
+        params: {
+          account: "0x56521AaC3E2a69d09965EF0c078C4eAE6b39F35B",
+        },
+      });
+      console.log(data);
+      nicheWeights = data.data;
+      console.log(data);
+
+    } catch (error) {
     console.log(error);
   }
   };
 
   const updateUserNicheWeights = async () => {
     if (niche.length > 0) {
-      setNicheWeights((prevNicheWeights) => {
-        const updatedNicheWeights = { ...prevNicheWeights };
-        niche.forEach((n) => {
-          if (updatedNicheWeights.hasOwnProperty(n)) {
-            updatedNicheWeights[n] += 1;
-          }
-        });
+      niche.forEach((element) => {
+        nicheWeights[element] += 1;
       });
     }
 
     const accounts = await window.ethereum.request({
       method: "eth_accounts",
     });
-    const data = await fetch("http://localhost:5000/api/updateUser", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        account: accounts[0],
+    try {
+      const data = await axios.post("http://localhost:5000/api/updateUser", {
+        account: "0x56521AaC3E2a69d09965EF0c078C4eAE6b39F35B",
         data: nicheWeights,
-      }),
-    });
-    const res = await data.json();
-    setNicheWeights(res);
-    // console.log(res);
+      });
+    }
+    catch (error) {
+      console.log(error);
+    }
   };
-  // useEffect(() => {
-  //   updateUserNicheWeights();
-  // }, [niche]);
 
   const connectMetamask = async () => {
     if (typeof window.ethereum !== "undefined") {
@@ -85,24 +213,36 @@ export default function loggedIn() {
     setSearchValue(event);
   };
   const getNiche = async (e) => {
+    i+=1;
+    
     e.preventDefault();
-    // console.log(niche);
-    // console.log(`Calling OpenAI... ${searchValue}`);
-    // try {
-    //   const response = await fetch("/api/generate", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify({ searchValue }),
-    //   });
-    //   const reply = await response.json();
-    //   setNiche(reply);
-    //   console.log("OpenAI replied...", reply);
-    // } catch (error) {
+    imageUrl = advUrls[Math.floor(Math.random() * advUrls.length)];
+    
+    console.log(niche);
+    console.log(`Calling OpenAI... ${searchValue}`);
+    try {
+      // axios POST request to "/api/generate" with body: {json.stringify(searchValue)}
+      // const data = await axios.post("/api/generate", {
+      //   body: searchValue
+      // })
+      // log in the console the type of searchValue
 
-    //   console.log(error);
-    // }
+      console.log(typeof JSON.stringify(searchValue));
+
+      const response = await fetch("/api/generate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        searchValue: JSON.stringify(searchValue)
+      });
+      const reply = await response.json();
+      console.log("OpenAI replied...", data);
+    } catch (error) {
+      console.log(error);
+    }
+
+    updateUserNicheWeights();
   };
 
   useEffect(() => {
@@ -594,7 +734,10 @@ export default function loggedIn() {
                         )}
                       </form>
                     </div>
-                    <AdvBanner imageUrl="https://content.hostgator.com/img/ads_logo.png" />
+                    {searchValue === "Ryzen" && (
+                      <AdvBanner imageUrl={appleLogoUrl} />
+                    )}
+                    <AdvBanner imageUrl={selectRandomImageUrl()} />
                   </div>
                 </div>
               </div>

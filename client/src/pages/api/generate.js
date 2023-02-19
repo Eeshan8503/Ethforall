@@ -127,6 +127,7 @@ const generateAction = async (req, res) => {
   });
 
   const basePromptOutput = baseCompletion.data.choices.pop();
+  console.log(basePromptOutput.text);
 
   res.status(200).json({ output: basePromptOutput });
 };

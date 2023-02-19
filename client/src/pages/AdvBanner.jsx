@@ -1,7 +1,6 @@
 import React from "react";
 
-const AdvBanner = () => {
-  const imageUrl = "https://content.hostgator.com/img/ads_logo.png";
+const AdvBanner = ({imageUrl}) => {
   return (
     <div className="items-center bg-gray-200 py-4">
       <img
